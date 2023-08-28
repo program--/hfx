@@ -1,0 +1,61 @@
+<OGRVRTDataSource>
+
+    <!-- Divides -->
+    <OGRVRTLayer name="divides">
+        <SrcDataSource>/vsicurl/https://nextgen-hydrofabric.s3.amazonaws.com/pre-release/conus.gpkg</SrcDataSource>
+        <SrcLayer>divides</SrcLayer>
+        <FID>divide_id</FID>
+        <GeometryType>wkbMultiPolygon</GeometryType>
+        <LayerSRS>EPSG:5070</LayerSRS>
+    </OGRVRTLayer>
+
+    <!-- Nexuses -->
+    <OGRVRTLayer name="nexus">
+        <SrcDataSource>/vsicurl/https://nextgen-hydrofabric.s3.amazonaws.com/pre-release/conus.gpkg</SrcDataSource>
+        <SrcLayer>nexus</SrcLayer>
+        <FID>id</FID>
+        <GeometryType>wkbPoint</GeometryType>
+        <LayerSRS>EPSG:5070</LayerSRS>
+    </OGRVRTLayer>
+
+    <!-- Flowpaths -->
+    <OGRVRTLayer name="flowpaths">
+        <SrcDataSource>/vsicurl/https://nextgen-hydrofabric.s3.amazonaws.com/pre-release/conus.gpkg</SrcDataSource>
+        <SrcLayer>flowpaths</SrcLayer>
+        <FID>id</FID>
+        <GeometryType>wkbMultiLineString</GeometryType>
+        <LayerSRS>EPSG:5070</LayerSRS>
+    </OGRVRTLayer>
+
+    <!-- Hydrolocations -->
+    <OGRVRTLayer name="hydrolocations">
+        <SrcDataSource>/vsicurl/https://nextgen-hydrofabric.s3.amazonaws.com/pre-release/conus.gpkg</SrcDataSource>
+        <SrcLayer>hydrolocations</SrcLayer>
+        <FID>id</FID>
+        <GeometryType>wkbPoint</GeometryType>
+        <LayerSRS>EPSG:5070</LayerSRS>
+    </OGRVRTLayer>
+
+    <!-- Lakes -->
+    <OGRVRTLayer name="lakes">
+        <SrcDataSource>/vsicurl/https://nextgen-hydrofabric.s3.amazonaws.com/pre-release/conus.gpkg</SrcDataSource>
+        <SrcLayer>lakes</SrcLayer>
+        <GeometryType>wkbPoint</GeometryType>
+        <LayerSRS>EPSG:5070</LayerSRS>
+    </OGRVRTLayer>
+
+    <!-- Network Table -->
+    <OGRVRTLayer name="network">
+        <SrcDataSource>/vsicurl/https://nextgen-hydrofabric.s3.amazonaws.com/pre-release/conus.gpkg</SrcDataSource>
+        <SrcLayer>network</SrcLayer>
+        <GeometryType>wkbNone</GeometryType> <!-- No Geometry -->
+    </OGRVRTLayer>
+
+    <!-- Attributes Table -->
+    <OGRVRTLayer name="flowpath_attributes">
+        <SrcDataSource>/vsicurl/https://nextgen-hydrofabric.s3.amazonaws.com/pre-release/conus.gpkg</SrcDataSource>
+        <SrcLayer>flowpath_attributes</SrcLayer>
+        <GeometryType>wkbNone</GeometryType> <!-- No Geometry -->
+    </OGRVRTLayer>
+
+</OGRVRTDataSource>

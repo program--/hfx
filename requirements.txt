@@ -1,0 +1,5 @@
+pyogrio
+geopandas
+pandas
+pypika
+pyarrow
