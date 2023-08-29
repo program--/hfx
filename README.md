@@ -2,7 +2,7 @@
 
 This repository contains a script `hfx.py` that quickly generates a subset of hydrofabric data from the CONUS pre-release GeoPackage.
 
-This **should not** be used in place of [hfsubset](github.com/LynkerIntel/hfsubset), unless you have a specific reason, or a local copy of the CONUS hydrofabric GeoPackage, as this queries directly on feature IDs.
+This **should not** be used in place of [hfsubset](https://github.com/LynkerIntel/hfsubset), unless you have a specific reason, or a local copy of the CONUS hydrofabric GeoPackage, as this queries directly on feature IDs.
 
 ## Usage
 
